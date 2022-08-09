@@ -51,5 +51,5 @@ $ mvn test -Dtest=UsersControllerIntegrationTests#should_save_a_new_user
 ```
 
 ## Swagger
-Cuando la aplicacion este ejecutandose, estaran disponibles en: [localhost:8080/documentation](localhost:8080/documentation)
+Cuando la aplicacion este ejecutandose, estaran disponibles en: [http://localhost:8080/swagger-ui/4.11.1/index.html?configUrl=/documentation/schemas/swagger-config](http://localhost:8080/swagger-ui/4.11.1/index.html?configUrl=/documentation/schemas/swagger-config)
 
