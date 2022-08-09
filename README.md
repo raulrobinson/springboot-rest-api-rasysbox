@@ -16,3 +16,40 @@ Construir Restful CRUD API para un Blog utilizando Spring Boot, Mysql, JPA e Hib
     git clone https://github.com/raulrobinson/springboot-rest-api-rasysbox.git
 ```
 
+## Requirements
+
+- Postgres: `^14.4`
+- Java: `^17`
+- Maven: `^3.8.4`
+
+## Installation
+
+```shell
+# download dependencies
+$ mvn install -DskipTests
+
+# run the application
+$ mvn spring-boot:run
+
+# run the tests
+$ mvn test
+
+# to build for production
+$ mvn clean package
+
+# to generate the coverage report after testing (available at: target/site/jacoco/index.html)
+$ mvn jacoco:report
+```
+
+## Running a specific test
+utilice el parametro `-Dtest=<class>#<method>`
+
+
+Por ejemplo para integrar una prueba. creando un usuario:
+```
+$ mvn test -Dtest=UsersControllerIntegrationTests#should_save_a_new_user
+```
+
+## Swagger
+Cuando la aplicacion este ejecutandose, estaran disponibles en: [localhost:8080/documentation](localhost:8080/documentation)
+
