@@ -25,6 +25,9 @@ Construir Restful CRUD API para un Blog utilizando Spring Boot, Mysql, JPA e Hib
 ## Postgres
 
 - Crear una base la base de datos
+
+$ postgres=#CREATE DATABASE common_app;
+
 nombre BD: common_app
 user_BD: postgres
 pass_BD: ***
