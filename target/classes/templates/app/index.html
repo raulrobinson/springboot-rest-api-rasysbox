@@ -1,0 +1,175 @@
+<layout th:replace="~{app/fragments/layout :: layout(~{::title}, ~{::links}, ~{::section}, ~{}, ~{})}">
+    <title>Inicio</title>
+    <links>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}">
+        <link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+    </links>
+    <section>
+        <div class="col-lg-8 mx-auto p-3 py-md-3">
+            <h1>
+                Spring Boot API con Login y Registro
+                <span class="badge bg-light fs-5 font-monospace text-danger fw-light shadow-sm align-top">
+                    <small>CRUD</small>
+                </span>                
+            </h1>
+            <p class="fs-5 col-md-8">
+                Esta es una API Sencilla.
+            </p>
+            <p class="fs-5 col-md-8">
+                CRUD de usuarios y ejecucion con las buenas practicas.
+            </p>
+            <main>
+                <div class="container px-2 py-2" id="hanging-icons">
+                    <h2 class="pb-2 border-bottom">Caracteristicas</h2>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-shield-alt text-light"></i>
+                            </div>
+                            <div>
+                                <h2>JWT</h2>
+                                <p>
+                                    Spring configuracion de securidad,
+                                    roles y sesiones.
+                                    JSON web token y refresh token ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-flask text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Tests</h2>
+                                <p>
+                                    Tests con JUnity, Test cubriendo reportes con Jacoco.
+                                    Test de memoria sobre la database H2 y tests de integracion
+                                    sobre Spring mock mvc ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-database text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Migraciones Database</h2>
+                                <p>
+                                    Migraciones de Database utilizando flywaydb.
+                                    Todo esto fue creado utilizando
+                                    <a class="text-dark" href="https://github.com/raulrobinson">
+                                        Java 
+                                    </a>
+                                    a traves de JOOQ query builder ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-scroll text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Swagger docs</h2>
+                                <p>
+                                    Documentacion generada con Swagger
+                                    automaticamente desde los api controllers ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-language text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Internationalization</h2>
+                                <p>
+                                    Soporte por 'Accept-Language' header, Spanish e English ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-envelope text-light"></i>
+                            </div>
+                            <div>
+                                <h2>SMTP integration</h2>
+                                <p>
+                                    Integracion con servicio
+                                    SMTP para envio de emails ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-search text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Soft delete</h2>
+                                <p>
+                                    Implementacion de Soft delete con spring data repository ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-history text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Lazy load</h2>
+                                <p>
+                                    Lazy carga de relacionamiento en entities ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-key text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Audit fields</h2>
+                                <p>
+                                    Auditar campos via herencia en
+                                    entities con BaseEntity.
+                                    created_at, updated_at etc ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fab fa-docker text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Docker</h2>
+                                <p>
+                                    Configuracion Docker compose, back-end y database ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-unlock text-light"></i>
+                            </div>
+                            <div>
+                                <h2>Recovery password</h2>
+                                <p>
+                                    Recuperar Password con codigo y validacion ...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-start">
+                            <div class="icon-square bg-dark text-dark flex-shrink-0 me-3">
+                                <i class="fas fa-users text-light"></i>
+                            </div>
+                            <div>
+                                <h2>CRUD </h2>
+                                <p>
+                                    Registro de Usuario y administracion ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+</layout>
