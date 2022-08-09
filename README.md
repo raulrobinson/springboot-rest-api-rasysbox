@@ -22,6 +22,17 @@ Construir Restful CRUD API para un Blog utilizando Spring Boot, Mysql, JPA e Hib
 - Java: `^17`
 - Maven: `^3.8.4`
 
+## Postgres
+
+- Crear una base la base de datos
+nombre BD: common_app
+user_BD: postgres
+pass_BD: ***
+
+- Configure los parametros de Sending E-mail para los tokens de Recovery
+
+Esto se configura en application.properties
+
 ## Installation
 
 ```shell
